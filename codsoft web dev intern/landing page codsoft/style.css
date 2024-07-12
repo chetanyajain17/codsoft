@@ -1,0 +1,171 @@
+/* Reset and basic styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    background-color: #004080;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navi {
+    background-color: #004080;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.AboutUs {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products .box1,
+.products .box2,
+.products .box3,
+.products .box4 {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products .box1:hover,
+.products .box2:hover,
+.products .box3:hover,
+.products .box4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.products .box1 img,
+.products .box2 img,
+.products .box3 img,
+.products .box4 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.products .box1 p,
+.products .box2 p,
+.products .box3 p,
+.products .box4 p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.products .box1 button,
+.products .box2 button,
+.products .box3 button,
+.products .box4 button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products .box1:hover button,
+.products .box2:hover button,
+.products .box3:hover button,
+.products .box4:hover button {
+    opacity: 1;
+}
+
+.products .box1:hover button {
+    background-color: #00695c;
+}
+
+.products .box2:hover button {
+    background-color: #00695c;
+}
+
+.products .box3:hover button {
+    background-color: #00695c;
+}
+
+.products .box4:hover button {
+    background-color: #00695c;
+}
+
+.enquiry{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+    display: inline;
+}
