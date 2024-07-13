@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 4, 93);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(175, 31, 175);
+}
+
+.leftbox {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.firstsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(4, 4, 93);
+}
+
+.firstsection > div {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.left {
+    width: 100%;
+}
+
+.right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.colour {
+    color: rgb(209, 33, 209);
+    font-weight: 600;
+}
+
+#element {
+    color: rgb(175, 31, 175);
+    font-weight: 500;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(4, 4, 93);
+}
+
+.projects .box1, .projects .box2 {
+    background-color: rgb(0, 0, 33);
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 20px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    text-align: center;
+}
+
+.projects .box1 a, .projects .box2 a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+
+.projects .box1 a:hover, .projects .box2 a:hover {
+    color: green;
+}
+
+.projects .box1:hover, .projects .box2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: rgb(0, 0, 33);
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.line {
+    border: 1px solid rgb(3, 3, 109);
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .box1, .projects .box2 {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .right img {
+        width: 100%;
+    }
+}
+
+
+.contact {
+    background-color: rgb(4, 4, 93);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contact h2, .links h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(209, 33, 209);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: rgb(175, 31, 175);
+}
+
+.links {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    background-color: rgb(4, 4, 93);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.links h2 {
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.links a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.links a:hover {
+    color: rgb(175, 31, 175);
+}
